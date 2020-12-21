@@ -1,0 +1,55 @@
+{% set name = "pytango" %}
+{% set version = "9.3.2" %}
+{% set sha256 = "4626a10203b04850176d602ecca571ce0afa9b69890ba3c3b1612d21f1ff7249" %}
+
+package:
+  name: {{ name|lower }}
+  version: {{ version }}
+
+source:
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: {{ sha256 }}
+
+build:
+  number: 2
+  skip: true  # [not linux]
+
+requirements:
+  build:
+    - {{ compiler('cxx') }}
+  host:
+    - python
+    - pip
+    - cppzmq
+    - cpptango >=9.3,<9.4
+    - boost
+    - numpy
+    - omniorb
+  run:
+    # cpptango set in run_exports
+    - python
+    # boost max_pin set in pin_run_as_build in conda-forge-pinning
+    - boost
+    - {{ pin_compatible('omniorb', min_pin='x.x', max_pin='x.x') }}
+    - {{ pin_compatible('numpy') }}
+    - six >=1.10
+    - enum34 # [py27]
+
+test:
+  imports:
+    - PyTango
+    - tango
+
+about:
+  home: http://pytango.rtfd.io
+  license: LGPL-3.0-only
+  license_family: LGPL
+  license_file: LICENSE.txt
+  summary: 'Python binding for the TANGO control system'
+  doc_url: http://pytango.rtfd.io
+  dev_url: https://github.com/tango-controls/pytango
+
+extra:
+  recipe-maintainers:
+    - beenje
+    - ajoubertza
