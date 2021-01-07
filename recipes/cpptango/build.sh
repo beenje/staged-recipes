@@ -1,6 +1,6 @@
 mkdir build
 cd build
-cmake -DCMAKE_BUILD_TYPE=Relase \
+cmake -DCMAKE_BUILD_TYPE=Release \
       -DCMAKE_VERBOSE_MAKEFILE=ON \
       -DCMAKE_INSTALL_PREFIX=$PREFIX \
       -DCMAKE_INSTALL_LIBDIR=lib \
