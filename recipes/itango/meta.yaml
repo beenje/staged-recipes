@@ -42,7 +42,7 @@ test:
 
 about:
   home: https://github.com/tango-controls/itango
-  license: LGPL-3.0-only
+  license: LGPL-3.0-or-later
   license_file: LICENSE
   summary: 'An interactive Tango client'
   description: |
