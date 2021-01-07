@@ -41,7 +41,7 @@ test:
 
 about:
   home: https://www.tango-controls.org
-  license: LGPL-3.0-only
+  license: LGPL-3.0-or-later
   license_file: LICENSE
   summary: 'Tango-Controls C++ library'
   description: |
