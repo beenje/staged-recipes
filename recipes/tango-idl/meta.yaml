@@ -1,6 +1,6 @@
 {% set name = "tango-idl" %}
-{% set version = "5.0.1" %}
-{% set sha256 = "5d2690bbf160d4f2c36eb6eb964b9ad020205e301f4cd005141b438465f1e1c7" %}
+{% set version = "5.1.0" %}
+{% set sha256 = "864dc73510fea5d71c8d7120ecb0d0df13510b37319120367305b94490b5751e" %}
 
 package:
   name: {{ name|lower }}
