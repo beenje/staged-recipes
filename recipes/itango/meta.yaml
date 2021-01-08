@@ -6,10 +6,8 @@ package:
   version: {{ version }}
 
 source:
-  # 0.1.7 not on PyPI yet
-  # url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  url: https://github.com/tango-controls/itango/archive/v{{ version }}.tar.gz
-  sha256: fc961097ebc28d5f6915034fc60b72403e502676d972b9f2dd664d3ea54d4126
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  sha256: 30346418242383484cde347abc93d81fde0147f2f49de71d3edf05a5eb73d098
 
 build:
   number: 0
