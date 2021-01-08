@@ -1,6 +1,6 @@
 {% set name = "tango-test" %}
-{% set version = "3.1" %}
-{% set sha256 = "c18798e076bb22e41cf6b762bd879f3c8583d53e9a1590f7dfe85a925d0fd38b" %}
+{% set version = "3.2" %}
+{% set sha256 = "c531934ec84d47c825c302d78aae780808931b79ff9f4f11e0d54e379ba646c9" %}
 
 package:
   name: {{ name|lower }}
