@@ -21,7 +21,7 @@ requirements:
     - python
     - pip
     - cppzmq
-    - cpptango >=9.3,<9.4
+    - cpptango >=9.3,<9.4.0a0
     - boost
     - numpy
     - omniorb
